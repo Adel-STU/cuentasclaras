@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuentas claras - Calcula</title>
+  <!-- Enlaces a Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Cuentas claras</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Calcula</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h2>Calcula tus gastos mensuales</h2>
+        <p>Ingresa tu ingreso mensual y tus gastos mensuales para calcular cuánto te queda después de pagar tus gastos.</p>
+        <form id="calculator-form">
+          <div class="form-group">
+            <label for="income">Ingreso mensual:</label>
+            <input type="number" class="form-control" id="income" placeholder="Ingrese su ingreso mensual" required>
+          </div>
+          <div class="form-group">
+            <label for="expenses">Gastos mensuales:</label>
+            <input type="number" class="form-control" id="expenses" placeholder="Ingrese sus gastos mensuales" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Calcular</button>
+        </form>
+        <div id="result-section" style="display: none;">
+          <h4>Resultado:</h4>
+          <p id="result-text"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-light text-center py-3">
+    <p>Derechos de autor &copy; 2023 Cuentas claras</p>
+  </footer>
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+  <script src="/js/script.js"></script>
+</body>
+</html>
+
